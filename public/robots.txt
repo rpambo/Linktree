@@ -1,0 +1,34 @@
+# Robots.txt para Rafael Pambo - LinkTree
+# Otimizado para mecanismos de busca
+
+# Permitir todos os bots
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.git
+Disallow: /node_modules
+Disallow: /out-tsc
+Disallow: /dist
+
+# Específico para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Específico para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Específico para Facebook
+User-agent: facebookexternalhit
+Allow: /
+
+# Arquivo de sitemap
+Sitemap: https://rafaelpambo.dev/sitemap.xml
+
+# Tempo de vida do cache
+Cache-control: max-age=86400
+
+# Especificar o servidor preferido
+# Host: https://rafaelpambo.dev
