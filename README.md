@@ -1,6 +1,6 @@
 # 🔗 Rafael Pambo - LinkTree
 
-Uma página de link centralizado moderna e responsiva, construída com **Angular 20** e **TypeScript**. Perfeita para portfólio, serviços e compartilhamento de redes sociais.
+A modern and responsive centralized link page, built with **Angular 20** and **TypeScript**. Perfect for portfolio, services, and social media sharing.
 
 ![Angular](https://img.shields.io/badge/Angular-20.0-red?logo=angular)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue?logo=typescript)
@@ -9,97 +9,97 @@ Uma página de link centralizado moderna e responsiva, construída com **Angular
 
 ---
 
-## 🎯 Sobre o Projeto
+## 🎯 About the Project
 
-**LinkTree** é uma página agregadora de links que permite:
+**LinkTree** is a link aggregator page that allows you to:
 
-- ✅ Compartilhar todos os seus links importantes em um único lugar
-- ✅ Design moderno com animações parallax
-- ✅ Totalmente responsivo (mobile, tablet, desktop)
-- ✅ Otimizado para SEO com meta tags dinâmicas
-- ✅ Configuração centralizada de URLs
-- ✅ Página 404 customizada
-- ✅ Pronto para produção
+- ✅ Share all your important links in one place
+- ✅ Modern design with parallax animations
+- ✅ Fully responsive (mobile, tablet, desktop)
+- ✅ SEO optimized with dynamic meta tags
+- ✅ Centralized URL configuration
+- ✅ Custom 404 page
+- ✅ Production ready
 
 ---
 
-## 📋 Tecnologias
+## 📋 Technologies
 
-| Tecnologia | Versão | Propósito |
-|-----------|--------|----------|
-| Angular | 20.0.1 | Framework principal |
-| TypeScript | 5.8.2 | Linguagem tipada |
-| UIKit | 3.25.15 | Framework CSS |
-| RxJS | 7.8.0 | Programação reativa |
+| Technology | Version | Purpose |
+|-----------|---------|---------|
+| Angular | 20.0.1 | Main framework |
+| TypeScript | 5.8.2 | Typed language |
+| UIKit | 3.25.15 | CSS framework |
+| RxJS | 7.8.0 | Reactive programming |
 | Karma | 6.4.0 | Test runner |
 
 ---
 
 ## 🚀 Quick Start
 
-### Pré-requisitos
-- Node.js 18+ (preferencialmente Node 20 LTS)
-- npm 9+ ou yarn/pnpm
+### Prerequisites
+- Node.js 18+ (preferably Node 20 LTS)
+- npm 9+ or yarn/pnpm
 - Angular CLI 20+
 
-### Instalação
+### Installation
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/rafaelpambo/LinkTree.git
 cd LinkTree
 
-# Instale as dependências
+# Install dependencies
 npm install
 
-# Inicie o servidor de desenvolvimento
+# Start the development server
 npm start
 ```
 
-Acesse `http://localhost:4200/` no seu navegador.
+Access `http://localhost:4200/` in your browser.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 LinkTree/
 ├── src/
 │   ├── app/
 │   │   ├── services/
-│   │   │   ├── environment.service.ts      # URLs centralizadas
-│   │   │   ├── links.service.ts            # Gerenciador de links
-│   │   │   └── seo.service.ts              # Otimização SEO
+│   │   │   ├── environment.service.ts      # Centralized URLs
+│   │   │   ├── links.service.ts            # Link manager
+│   │   │   └── seo.service.ts              # SEO optimization
 │   │   ├── paginas/
-│   │   │   ├── home/                       # Página principal
+│   │   │   ├── home/                       # Main page
 │   │   │   │   ├── home.ts
 │   │   │   │   ├── home.html
 │   │   │   │   └── home.css
-│   │   │   └── not-found/                  # Página 404
+│   │   │   └── not-found/                  # 404 page
 │   │   │       └── not-found.ts
 │   │   ├── app.ts                          # Root component
-│   │   ├── app.routes.ts                   # Rotas
-│   │   └── app.config.ts                   # Configuração
-│   ├── index.html                          # HTML raiz
+│   │   ├── app.routes.ts                   # Routes
+│   │   └── app.config.ts                   # Configuration
+│   ├── index.html                          # Root HTML
 │   ├── main.ts                             # Entry point
-│   └── styles.css                          # Estilos globais
+│   └── styles.css                          # Global styles
 ├── public/
-│   ├── robots.txt                          # SEO - Instruções para bots
-│   ├── sitemap.xml                         # SEO - Mapa do site
-│   └── logo.png                            # Logo e assets
-├── angular.json                            # Configuração Angular
-├── tsconfig.json                           # Configuração TypeScript
-├── package.json                            # Dependências
-└── README.md                               # Este arquivo
+│   ├── robots.txt                          # SEO - Bot instructions
+│   ├── sitemap.xml                         # SEO - Site map
+│   └── logo.png                            # Logo and assets
+├── angular.json                            # Angular configuration
+├── tsconfig.json                           # TypeScript configuration
+├── package.json                            # Dependencies
+└── README.md                               # This file
 ```
 
 ---
 
-## 📝 Configuração
+## 📝 Configuration
 
-### 1. Atualizar URLs Sociais
+### 1. Update Social URLs
 
-Edite `src/app/services/environment.service.ts`:
+Edit `src/app/services/environment.service.ts`:
 
 ```typescript
 export const SITE_CONFIG: SiteConfig = {
@@ -110,76 +110,76 @@ export const SITE_CONFIG: SiteConfig = {
     linkedin: 'https://www.linkedin.com/in/rafael-pambo/',
     instagram: 'https://www.instagram.com/rafaelpambo',
     facebook: 'https://www.facebook.com/rafaelpambo',
-    newsletter: 'https://seu-newsletter.com'
+    newsletter: 'https://your-newsletter.com'
   }
 };
 ```
 
-### 2. Customizar Conteúdo
+### 2. Customize Content
 
-Edite `src/app/paginas/home/home.html` com suas informações pessoais.
+Edit `src/app/paginas/home/home.html` with your personal information.
 
-### 3. Adicionar Imagens
+### 3. Add Images
 
-Coloque suas imagens em `public/`:
-- `rafael-pambo.webp` - Sua foto de perfil
-- `logo.png` - Logo do seu site
-- `favicon.ico` - Ícone do browser
+Place your images in `public/`:
+- `rafael-pambo.webp` - Your profile photo
+- `logo.png` - Your site logo
+- `favicon.ico` - Browser icon
 
 ---
 
-## 🛠️ Comandos Disponíveis
+## 🛠️ Available Commands
 
 ```bash
-# Desenvolvimento
-npm start                 # Inicia servidor de desenvolvimento
-npm run watch            # Watch mode para desenvolvimento
+# Development
+npm start                 # Start development server
+npm run watch            # Watch mode for development
 
 # Build
-npm run build            # Build de produção otimizado
-npm run build:dev        # Build de desenvolvimento
+npm run build            # Production-optimized build
+npm run build:dev        # Development build
 
-# Testes
-npm test                 # Executa testes unitários
-npm run test:coverage    # Testes com cobertura
+# Testing
+npm test                 # Run unit tests
+npm run test:coverage    # Tests with coverage
 
-# Análise de código
-npm run lint             # Lint dos arquivos TypeScript
-npm run analyze          # Análise de bundle size
+# Code analysis
+npm run lint             # Lint TypeScript files
+npm run analyze          # Bundle size analysis
 ```
 
 ---
 
-## 📊 Funcionalidades Principais
+## 🎨 Main Features
 
-### ✨ Animações e Interatividade
-- Parallax scrolling na imagem de perfil
-- Animações suaves de opacity
-- Botões interativos com hover effects
-- Menu dropdown para compartilhamento
+### ✨ Animations and Interactivity
+- Parallax scrolling on profile image
+- Smooth opacity animations
+- Interactive buttons with hover effects
+- Dropdown menu for sharing
 
-### 🔗 Compartilhamento Social
+### 🔗 Social Sharing
 - WhatsApp, Facebook, LinkedIn
 - Instagram, GitHub links
-- Web Share API nativa
-- Customização de mensagens
+- Native Web Share API
+- Message customization
 
-### 🔍 SEO Otimizado
-- Meta tags dinâmicas
-- Open Graph para redes sociais
+### 🔍 SEO Optimized
+- Dynamic meta tags
+- Open Graph for social media
 - Twitter Cards
 - Structured Data (JSON-LD)
 - Sitemap.xml
-- Robots.txt configurado
+- Robots.txt configured
 
-### 📱 Responsividade
+### 📱 Responsiveness
 - Mobile-first design
-- Breakpoints otimizados
+- Optimized breakpoints
 - Touch-friendly buttons
-- UIKit framework integrado
+- UIKit framework integrated
 
-### 🛡️ Segurança
-- Tipos TypeScript completos
+### 🛡️ Security
+- Complete TypeScript types
 - Environment variables
 - Error handling
 - CSRF protection ready
@@ -188,120 +188,119 @@ npm run analyze          # Análise de bundle size
 
 ## 🌐 Deploy
 
-### Vercel (Recomendado)
+### Vercel (Recommended)
 
 ```bash
-# Instale Vercel CLI
+# Install Vercel CLI
 npm i -g vercel
 
 # Deploy
 vercel
 ```
 
-O arquivo `vercel.json` já está configurado!
+The `vercel.json` file is already configured!
 
 ### GitHub Pages
 
 ```bash
 npm run build
-# Upload /dist para gh-pages branch
+# Upload /dist to gh-pages branch
 ```
 
 ### Apache/Nginx
 
-O arquivo `.htaccess` contém configurações para Apache.
-Para Nginx, use configuração similar.
+The `.htaccess` file contains Apache configurations.
+For Nginx, use similar configuration.
 
 ---
 
-## 🔐 Variáveis de Ambiente
+## 🔐 Environment Variables
 
-Crie um arquivo `.env` (não será commitado):
+Create a `.env` file (won't be committed):
 
 ```env
-# .env (LOCAL ONLY - não commitear)
+# .env (LOCAL ONLY - don't commit)
 SITE_BASE_URL=https://rafaelpambo.dev
 ANALYTICS_ID=UA-XXXXXXX-X
-API_KEY=sua_chave_secreta
+API_KEY=your_secret_key
 ```
 
-Use em seu código:
+Use in your code:
 ```typescript
 const apiKey = import.meta.env.VITE_API_KEY;
 ```
 
 ---
 
-## 📚 Documentação Adicional
+## 📚 Additional Documentation
 
-Este projeto inclui documentação completa:
+This project includes complete documentation:
 
-| Arquivo | Descrição |
-|---------|-----------|
-| [PRODUCAO_CHECKLIST.md](PRODUCAO_CHECKLIST.md) | Checklist completo de produção |
-| [URLS_CENTRALIZADAS.md](URLS_CENTRALIZADAS.md) | Referência de URLs |
-| [GITIGNORE_GUIDE.md](GITIGNORE_GUIDE.md) | Guia do .gitignore |
-| [SEO_GUIDE_PT.md](SEO_GUIDE_PT.md) | Guia completo de SEO |
+| File | Description |
+|------|-------------|
+| [PRODUCAO_CHECKLIST.md](PRODUCAO_CHECKLIST.md) | Complete production checklist |
+| [URLS_CENTRALIZADAS.md](URLS_CENTRALIZADAS.md) | URL reference |
+| [GITIGNORE_GUIDE.md](GITIGNORE_GUIDE.md) | .gitignore guide |
 
 ---
 
-## 🧪 Testes
+## 🧪 Testing
 
 ```bash
-# Executar testes unitários
+# Run unit tests
 npm test
 
-# Com coverage
+# With coverage
 npm run test:coverage
 
 # Watch mode
 npm test -- --watch
 ```
 
-Exemplos de testes estão em `src/app/services/seo.service.spec.ts`.
+Test examples are in `src/app/services/seo.service.spec.ts`.
 
 ---
 
-## 🎨 Customização
+## 🎨 Customization
 
-### Cores e Estilos
-Edite `src/app/paginas/home/home.css` para customizar cores e layouts.
+### Colors and Styles
+Edit `src/app/paginas/home/home.css` to customize colors and layouts.
 
-### Fontes
-Fontes estão importadas no `src/index.html` via Google Fonts.
+### Fonts
+Fonts are imported in `src/index.html` via Google Fonts.
 
 ### Icons
-SVG icons estão inline nos templates - sinta-se livre para customizar!
+SVG icons are inline in templates - feel free to customize!
 
 ---
 
 ## 📈 Performance
 
-Optimizações incluídas:
-- ✅ Lazy loading de componentes
-- ✅ Tree-shaking de módulos não usados
-- ✅ Minificação de assets
+Included optimizations:
+- ✅ Lazy loading of components
+- ✅ Tree-shaking of unused modules
+- ✅ Asset minification
 - ✅ Gzip compression ready
-- ✅ Cache control configurado
+- ✅ Cache control configured
 - ✅ Image optimization (WebP format)
 
-**Lighthouse Score**: ✨ 95+ (quando deployado)
+**Lighthouse Score**: ✨ 95+ (when deployed)
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Porta 4200 já em uso
+### Port 4200 already in use
 ```bash
 ng serve --port 4201
 ```
 
-### Erros de compilação TypeScript
+### TypeScript compilation errors
 ```bash
 npm run build -- --configuration development
 ```
 
-### Limpar cache do Angular
+### Clear Angular cache
 ```bash
 rm -rf .angular/cache node_modules
 npm install
@@ -309,25 +308,25 @@ npm install
 
 ---
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-Contribuições são bem-vindas! Para modificações maiores:
+Contributions are welcome! For major changes:
 
-1. Faça um fork do repositório
-2. Crie uma branch (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+1. Fork the repository
+2. Create a branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 👨‍💻 Autor
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👨‍💻 Author
 
 **Rafael Pambo**
 - 🌐 Website: https://rafaelpambo.dev
@@ -337,41 +336,41 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 
 ---
 
-## 📞 Suporte
+## 📞 Support
 
-Para dúvidas, issues ou sugestões:
+For questions, issues, or suggestions:
 
-- 📝 [Abrir uma Issue](https://github.com/rafaelpambo/LinkTree/issues)
-- 💬 [Discussões](https://github.com/rafaelpambo/LinkTree/discussions)
-- 📧 [Enviar email](mailto:contato@rafaelpambo.dev)
-
----
-
-## 🙏 Agradecimentos
-
-- Angular Team pela excelente framework
-- UIKit pela base CSS
-- Comunidade open-source
+- 📝 [Open an Issue](https://github.com/rafaelpambo/LinkTree/issues)
+- 💬 [Discussions](https://github.com/rafaelpambo/LinkTree/discussions)
+- 📧 [Send email](mailto:contato@rafaelpambo.dev)
 
 ---
 
-## 📊 Status do Projeto
+## 🙏 Acknowledgments
 
-| Aspecto | Status |
+- Angular Team for the excellent framework
+- UIKit for the CSS foundation
+- Open-source community
+
+---
+
+## 📊 Project Status
+
+| Aspect | Status |
 |--------|--------|
-| Desenvolvimento | ✅ Completo |
-| SEO | ✅ Otimizado |
-| Performance | ✅ Otimizado |
-| Mobile | ✅ Responsivo |
-| Produção | ✅ Pronto |
-| Documentação | ✅ Completa |
+| Development | ✅ Complete |
+| SEO | ✅ Optimized |
+| Performance | ✅ Optimized |
+| Mobile | ✅ Responsive |
+| Production | ✅ Ready |
+| Documentation | ✅ Complete |
 
 ---
 
-## 🚀 Roadmap Futuro
+## 🚀 Future Roadmap
 
 - [ ] Dark mode toggle
-- [ ] Múltiplos idiomas (i18n)
+- [ ] Multiple languages (i18n)
 - [ ] Analytics dashboard
 - [ ] PWA (Progressive Web App)
 - [ ] QR Code generator
@@ -380,9 +379,10 @@ Para dúvidas, issues ou sugestões:
 
 ---
 
-**Última atualização**: 22 de Abril de 2026
+**Last updated**: April 22, 2026
 
-⭐ Se este projeto foi útil, considere dar uma estrela no GitHub!
+⭐ If this project was useful, consider giving it a star on GitHub!
+
 
 
 ```bash
