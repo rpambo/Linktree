@@ -65,11 +65,7 @@ Access `http://localhost:4200/` in your browser.
 ```
 LinkTree/
 ├── src/
-│   ├── app/
-│   │   ├── services/
-│   │   │   ├── environment.service.ts      # Centralized URLs
-│   │   │   ├── links.service.ts            # Link manager
-│   │   │   └── seo.service.ts              # SEO optimization
+│   ├── app/            
 │   │   ├── paginas/
 │   │   │   ├── home/                       # Main page
 │   │   │   │   ├── home.ts
@@ -96,24 +92,6 @@ LinkTree/
 ---
 
 ## 📝 Configuration
-
-### 1. Update Social URLs
-
-Edit `src/app/services/environment.service.ts`:
-
-```typescript
-export const SITE_CONFIG: SiteConfig = {
-  baseUrl: 'https://rafaelpambo.dev',
-  socialLinks: {
-    whatsapp: 'https://wa.me/244900000000',
-    github: 'https://github.com/rafaelpambo',
-    linkedin: 'https://www.linkedin.com/in/rafael-pambo/',
-    instagram: 'https://www.instagram.com/rafaelpambo',
-    facebook: 'https://www.facebook.com/rafaelpambo',
-    newsletter: 'https://your-newsletter.com'
-  }
-};
-```
 
 ### 2. Customize Content
 
@@ -177,12 +155,6 @@ npm run analyze          # Bundle size analysis
 - Optimized breakpoints
 - Touch-friendly buttons
 - UIKit framework integrated
-
-### 🛡️ Security
-- Complete TypeScript types
-- Environment variables
-- Error handling
-- CSRF protection ready
 
 ---
 
@@ -261,62 +233,9 @@ Test examples are in `src/app/services/seo.service.spec.ts`.
 
 ---
 
-## 🎨 Customization
-
-### Colors and Styles
-Edit `src/app/paginas/home/home.css` to customize colors and layouts.
-
-### Fonts
-Fonts are imported in `src/index.html` via Google Fonts.
-
-### Icons
-SVG icons are inline in templates - feel free to customize!
-
----
-
-## 📈 Performance
-
-Included optimizations:
-- ✅ Lazy loading of components
-- ✅ Tree-shaking of unused modules
-- ✅ Asset minification
-- ✅ Gzip compression ready
-- ✅ Cache control configured
-- ✅ Image optimization (WebP format)
-
-**Lighthouse Score**: ✨ 95+ (when deployed)
-
----
-
-## 🐛 Troubleshooting
-
-### Port 4200 already in use
-```bash
-ng serve --port 4201
-```
-
-### TypeScript compilation errors
-```bash
-npm run build -- --configuration development
-```
-
-### Clear Angular cache
-```bash
-rm -rf .angular/cache node_modules
-npm install
-```
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! For major changes:
-
-1. Fork the repository
-2. Create a branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ---
 
@@ -332,17 +251,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - 🌐 Website: https://rafaelpambo.dev
 - 💼 LinkedIn: https://www.linkedin.com/in/rafael-pambo/
 - 🐙 GitHub: https://github.com/rafaelpambo
-- 📧 Email: contato@rafaelpambo.dev
-
----
-
-## 📞 Support
-
-For questions, issues, or suggestions:
-
-- 📝 [Open an Issue](https://github.com/rafaelpambo/LinkTree/issues)
-- 💬 [Discussions](https://github.com/rafaelpambo/LinkTree/discussions)
-- 📧 [Send email](mailto:contato@rafaelpambo.dev)
 
 ---
 
@@ -369,7 +277,6 @@ For questions, issues, or suggestions:
 
 ## 🚀 Future Roadmap
 
-- [ ] Dark mode toggle
 - [ ] Multiple languages (i18n)
 - [ ] Analytics dashboard
 - [ ] PWA (Progressive Web App)
@@ -382,7 +289,6 @@ For questions, issues, or suggestions:
 **Last updated**: April 22, 2026
 
 ⭐ If this project was useful, consider giving it a star on GitHub!
-
 
 
 ```bash
