@@ -30,7 +30,6 @@ A modern and responsive centralized link page, built with **Angular 20** and **T
 | Angular | 20.0.1 | Main framework |
 | TypeScript | 5.8.2 | Typed language |
 | UIKit | 3.25.15 | CSS framework |
-| RxJS | 7.8.0 | Reactive programming |
 | Karma | 6.4.0 | Test runner |
 
 ---
